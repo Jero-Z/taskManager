@@ -1,6 +1,10 @@
 
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+//@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+$google-font:"../fonts/google-font.ttf";
+
+@import "../fonts/google.fonts";
 
 // Variables
 @import "variables";
