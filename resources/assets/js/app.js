@@ -15,8 +15,9 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+let create_project_blade = Vue.component('create-project', require('./components/create_project.vue'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    components:{create_project_blade}
 });
