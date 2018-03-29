@@ -13579,7 +13579,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(13);
-module.exports = __webpack_require__(42);
+module.exports = __webpack_require__(43);
 
 
 /***/ }),
@@ -35601,9 +35601,9 @@ module.exports = function spread(callback) {
 var disposed = false
 var normalizeComponent = __webpack_require__(40)
 /* script */
-var __vue_script__ = null
+var __vue_script__ = __webpack_require__(41)
 /* template */
-var __vue_template__ = __webpack_require__(41)
+var __vue_template__ = __webpack_require__(42)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -35752,6 +35752,41 @@ module.exports = function normalizeComponent (
 
 /***/ }),
 /* 41 */
+/***/ (function(module, exports) {
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/***/ }),
+/* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -35776,7 +35811,7 @@ var staticRenderFns = [
             "data-target": "#exampleModal"
           }
         },
-        [_vm._v("\n  Launch demo modal\n")]
+        [_c("i", { staticClass: "fa fa-btn fa-plus" })]
       ),
       _vm._v(" "),
       _c(
@@ -35804,7 +35839,7 @@ var staticRenderFns = [
                       staticClass: "modal-title",
                       attrs: { id: "exampleModalLabel" }
                     },
-                    [_vm._v("Modal title")]
+                    [_vm._v("新建项目")]
                   ),
                   _vm._v(" "),
                   _c(
@@ -35826,7 +35861,10 @@ var staticRenderFns = [
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "modal-body" }, [
-                  _vm._v("\n        ...\n      ")
+                  _c("input", {
+                    staticClass: "form-control",
+                    attrs: { type: "text" }
+                  })
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "modal-footer" }, [
@@ -35836,16 +35874,16 @@ var staticRenderFns = [
                       staticClass: "btn btn-secondary",
                       attrs: { type: "button", "data-dismiss": "modal" }
                     },
-                    [_vm._v("Close")]
+                    [_vm._v("关闭")]
                   ),
                   _vm._v(" "),
                   _c(
                     "button",
                     {
-                      staticClass: "btn btn-primary",
+                      staticClass: "btn btn-success",
                       attrs: { type: "button" }
                     },
-                    [_vm._v("Save changes")]
+                    [_vm._v("添加")]
                   )
                 ])
               ])
@@ -35866,7 +35904,7 @@ if (false) {
 }
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

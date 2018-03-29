@@ -164,7 +164,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
 
         Clockwork\Support\Laravel\ClockworkServiceProvider::class,//clockwork
-
+        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
     ],
 
     /*

@@ -19,6 +19,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $projects = \Auth::user()->projects()->get();
+
+        return response()->json([
+            'success' => true,
+            'data' => $projects
+        ]);
     }
 }

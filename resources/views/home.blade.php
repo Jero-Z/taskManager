@@ -1,5 +1,5 @@
 @extends('layouts.app')
 
 @section('content')
-    <create-project></create-project>
+    <create_project_blade></create_project_blade>
 @endsection
