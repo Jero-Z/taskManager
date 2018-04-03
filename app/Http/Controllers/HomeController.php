@@ -19,6 +19,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+
         $projects = \Auth::user()->projects()->get();
 
         return response()->json([

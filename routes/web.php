@@ -18,8 +18,13 @@ Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::post('register', 'Auth\RegisterController@register');
 Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+
+Route::post('authenticate', 'AuthController@authenticate')->name('authenticate');//验证
+Route::post('logout', 'AuthController@logout');//登出
 //Auth::routes();
 
-Route::group(['middleware'=>'auth'],function (){
+
+Route::group(['middleware' => 'auth'], function () {
     Route::get('/', "HomeController@index")->name('home');
+    Route::post('token-refresh', 'AuthController@tokenRefresh');//刷新 token
 });

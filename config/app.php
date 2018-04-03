@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Shanghai',
 
     /*
     |--------------------------------------------------------------------------
@@ -164,7 +164,8 @@ return [
         Collective\Html\HtmlServiceProvider::class,
 
         Clockwork\Support\Laravel\ClockworkServiceProvider::class,//clockwork
-        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+
+        Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,//jwt-auth
     ],
 
     /*
@@ -216,6 +217,8 @@ return [
         'Image' => Intervention\Image\Facades\Image::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+        'JWTAuth' => Tymon\JWTAuth\Facades\JWTAuth::class,
+        'JWTFactory' => Tymon\JWTAuth\Facades\JWTFactory::class,
     ],
 
 ];
